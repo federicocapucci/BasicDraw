@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vicky Drawing app</title>
+</head>
+
+<body>
+    <p>draw here</p>
+    <section class="container">
+        <div class="drawing-board">
+            <canvas id="drawing-board"></canvas>
+        </div>
+        <div id="toolbar">
+            <h1>VickDraw.</h1>
+            <label for="color">Color</label>
+            <input id="color" name='color' type="color">
+            <label for="lineWidth">Line Width</label>
+            <input id="lineWidth" name='lineWidth' type="range" value="25" min="1" max="200">
+            <div class="stroke">
+                <h3>Stroke Type</h3>
+                <input id="round" name='strokeType' type="radio" value="round" checked="checked">
+                <label for="round">Round</label>
+                <input id="square" name='strokeType' type="radio" value="Square">
+                <label for="square">Square</label>
+            </div>
+            <div class="bucket" id="bucket">Page color</div>
+
+            <button id="clear">Clear</button>
+        </div>
+    </section>
+    <script src="./scrypt.js"></script>
+</body>
+
+</html>
